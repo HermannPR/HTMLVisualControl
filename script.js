@@ -1,7 +1,7 @@
 // script.js
 
 // Load the header
-fetch('header.html')
+fetch('src/components/header/header.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('header-placeholder').innerHTML = data;
@@ -9,7 +9,7 @@ fetch('header.html')
     .catch(error => console.error('Error loading header:', error));
 
 // Load the footer
-fetch('footer.html')
+fetch('src/components/footer/footer.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
