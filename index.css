@@ -78,3 +78,33 @@
 .info-button:hover {
     background-color: var(--highlight-color);
 }
+
+/* New section styles */
+#electro-oculograma {
+    padding: 20px;
+    background-color: var(--var);
+    color: var(--text-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px var(--color1);
+    opacity: 1;
+    transform: translateY(var(--scroll-progress, 20px));
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    margin: 40px auto; /* Add space on top and bottom */
+    width: 33.33%; /* Set width to a third of the page */
+}
+
+#electro-oculograma.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animated text styles */
+.animated-text {
+    font-size: 1.2em;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
