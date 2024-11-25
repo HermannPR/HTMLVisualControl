@@ -1,0 +1,70 @@
+:root {
+    /* General Colors */
+    --primary-color: #4c4c4c; /* Default color for primary text */
+    --secondary-color: #4c4c4c88; /* Secondary accent color */
+    --highlight-color: var(--color1); /* Highlight color for buttons */
+    --background-color: #e0d8ed; /* Main background color */
+    --surface-color: #211951; /* Surface elements background */
+    --text-color: #4c4c4c; /* Main text color */
+    
+    /* Title-Specific Colors */
+    --title-color: #7cfcff; /* Title color (independent of background) */
+    --title-shadow: rgba(0, 0, 0, 0.4); /* Shadow for the title text */
+
+    /* Gradients */
+    --primary-gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    --secondary-gradient: linear-gradient(135deg, #15F5BA 0%, #836FFF 100%);
+    --card-gradient: linear-gradient(0, var(--background-color) 0%, var(--surface-color) 50%, var(--background-color) 100%);
+
+    /* Colors for Transition */
+    --color1: #1500ff;
+    --color2: #0011ff;
+    --color3: #0062ff;
+    --color4: #0080ff;
+    --color5: #008cff;
+    --color6: #001eff;
+}
+
+@font-face {
+    font-family: 'PlanetViewDemoRegular';
+    src: url('fonts/PlanetViewDemoRegular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Lucida Console', sans-serif; /* Use Roboto for body text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+}
+
+title {
+    font-family: 'GeistMono-VariableFont_wght'; /* Use GeistMono for headings */
+    src: url('fonts/GeistMono-VariableFont_wght.ttf') format('truetype');
+
+}
+
+main {
+    flex: 1;
+    margin-top: 80px; /* Adjust this value based on the header's height */
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #4c4c4c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+}

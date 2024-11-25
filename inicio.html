@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - VisualControl</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <section id="inicio">
+            <div class="overlay">
+                <h2 class="styled-text">Bienvenido a VisualControl</h2>
+                <p class="custom-font">El control de tu hogar, al alcance de tu visión. Descubre cómo nuestro sistema puede transformar tu vida.</p>
+                <div class="button-container">
+                    <a href="#" class="info-button">Información 1</a>
+                    <a href="#" class="info-button">Información 2</a>
+                    <a href="#" class="info-button">Información 3</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Load the background
+        fetch('background.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            })
+            .catch(error => console.error('Error loading background:', error));
+    </script>
+</body>
+</html>

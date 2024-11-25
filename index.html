@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisualControl</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="quienes.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="buttons.css"> <!-- Link to buttons.css -->
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main class="grid-container">
+        <section id="inicio" class="grid-item">
+            <div class="overlay">
+                <h2 class="styled-text">Bienvenido a VisualControl</h2>
+                <p class="custom-font">El control de tu hogar, al alcance de tu visión. Descubre cómo nuestro sistema puede transformar tu vida.</p>
+                <div class="button-container">
+                    <a href="#quienes" class="button secondary">Saber más</a>
+                </div>
+            </div>
+        </section>
+        <section id="quienes" class="grid-item">
+            <h1>¿Quiénes Somos?</h1>
+            <p>En VisualControl, nos apasiona innovar y brindar soluciones tecnológicas que transformen la manera en que interactuamos con nuestro entorno. Nuestro objetivo es poner el control de tu hogar al alcance de tu visión, integrando tecnología de punta con un enfoque práctico y accesible.</p>
+            <h2>Nuestra Misión</h2>
+            <p>Diseñar herramientas que aprovechen el poder de la tecnología biométrica para facilitar la automatización del hogar, proporcionando un control intuitivo y personalizado.</p>
+            <h2>Qué hacemos</h2>
+            <p>Nuestro proyecto combina Electrooculografía (EOG) con sistemas de automatización, permitiendo que los movimientos oculares se traduzcan en acciones concretas. Desde el encendido de un ventilador hasta la activación de luces, nuestro sistema busca adaptarse a tus necesidades con precisión y eficiencia.</p>
+            <h2>Cómo lo logramos</h2>
+            <p>Utilizamos un visor equipado con sensores avanzados y un circuito especializado que procesa las señales de microvoltios generadas por los músculos oculares. A través de módulos como buffers, amplificadores y filtros, garantizamos una señal clara y confiable que nuestro microcontrolador, basado en el Arduino Uno R4 WiFi, puede interpretar y accionar.</p>
+            <h2>Innovación constante</h2>
+            <p>Además de registrar movimientos oculares, integramos sensores ambientales, como un sensor de humedad, que permite automatizar el encendido de dispositivos en función del clima, ofreciendo una experiencia aún más completa y eficiente.</p>
+            <p>Con VisualControl, no solo damos un paso hacia la tecnología del futuro, sino que la hacemos parte de tu vida diaria. ¡El control nunca había sido tan sencillo y natural!</p>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="script.js"></script>
+    <script>
+        // Load the background
+        fetch('background.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            })
+            .catch(error => console.error('Error loading background:', error));
+    </script>
+</body>
+</html>
