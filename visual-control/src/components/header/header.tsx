@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './header.css';
-import Logo from "../../assets/logo.png"
+import Logo from "../../assets/images/logo.png"
 
 const Header = () => {
 

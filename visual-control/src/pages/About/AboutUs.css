@@ -1,0 +1,11 @@
+/* Quienes Somos Page Styles */
+#quienes {
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#quienes p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
