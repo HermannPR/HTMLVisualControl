@@ -1,37 +1,53 @@
 /* Login Page Styles */
 #login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    padding: 12vh;
     background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15vh;
+    max-width: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.form-container {
-    background-color: var(--surface-color);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.form-container h2 {
+#login h2 {
     margin-bottom: 20px;
     text-align: center;
 }
 
-.form-container form {
+#login p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+form.horizontal-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-.form-container input {
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+input[type="text"], input[type="password"] {
     padding: 10px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;
 }
 
-.form-container button {
+button[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -39,8 +55,17 @@
     color: var(--text-color);
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
+    max-width: 200px;
 }
 
-.form-container button:hover {
+button[type="submit"]:hover {
     background-color: var(--secondary-color);
+}
+
+.feedback {
+    margin-top: 10px;
+    font-size: 1em;
+    color: green;
+    text-align: center;
 }
