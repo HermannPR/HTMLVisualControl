@@ -1,0 +1,105 @@
+/* Doctor Page Styles */
+#doctor {
+    padding: 100px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30vh;
+
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#doctor h2 {
+    margin-bottom: 20px;
+}
+
+#doctor p {
+    font-size: 1.2em;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button.large {
+    font-size: 1.5em;
+    padding: 20px 40px;
+}
+
+#registrar-doctor, #registrar-paciente {
+    
+    padding: 201px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30vh;
+
+#registrar-doctor h2, #registrar-paciente h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#registrar-doctor p, #registrar-paciente p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+form.horizontal-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1 1 200px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 200px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+.feedback {
+    margin-top: 10px;
+    font-size: 1em;
+    color: green;
+    text-align: center;
+}

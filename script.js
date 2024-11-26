@@ -60,6 +60,17 @@ window.addEventListener('scroll', () => {
     document.documentElement.style.setProperty('--scroll-progress', `${scrollProgress}px`);
 });
 
+// Form submission feedback
+document.getElementById('doctor-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('doctor-feedback').textContent = 'Doctor registrado con éxito.';
+});
+
+document.getElementById('paciente-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('paciente-feedback').textContent = 'Paciente registrado con éxito.';
+});
+
 // Existing script code for color-changing logo
 // ... (include your existing code here)
 
