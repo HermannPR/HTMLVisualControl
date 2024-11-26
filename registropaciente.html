@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Paciente - VisualControl</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="registropaciente.css">
+    <link rel="stylesheet" href="buttons.css"> <!-- Link to buttons.css -->
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <body>
+        <section id="registrar-paciente">
+            <h2>Registrar Paciente</h2>
+            <p>Aquí puedes registrar un nuevo paciente.</p>
+            <form id="paciente-form" class="horizontal-form">
+                <div class="form-group">
+                    <label for="paciente-nombre">Nombre:</label>
+                    <input type="text" id="paciente-nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="paciente-apellido">Apellido:</label>
+                    <input type="text" id="paciente-apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="paciente-enfermedad">Enfermedad:</label>
+                    <input type="text" id="paciente-enfermedad" name="enfermedad" required>
+                </div>
+                <div class="form-group">
+                    <label for="paciente-iddoctor">IDDoctor:</label>
+                    <input type="number" id="paciente-iddoctor" name="iddoctor" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="button large">Enviar</button>
+                </div>
+                <p id="paciente-feedback" class="feedback"></p>
+            </form>
+        </section>
+    </body>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="script.js"></script>
+</body>
+</html>

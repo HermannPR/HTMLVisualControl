@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Doctor - VisualControl</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="registrodoctor.css">
+    <link rel="stylesheet" href="buttons.css"> <!-- Link to buttons.css -->
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <body>
+        <section id="registrar-doctor">
+            <h2>Registrar Doctor</h2>
+            <p>Aquí puedes registrar un nuevo doctor.</p>
+            <form id="doctor-form" class="horizontal-form">
+                <div class="form-group">
+                    <label for="doctor-nombre">Nombre:</label>
+                    <input type="text" id="doctor-nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor-apellido">Apellido:</label>
+                    <input type="text" id="doctor-apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor-pid">pID:</label>
+                    <input type="number" id="doctor-pid" name="pid" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="button large">Enviar</button>
+                </div>
+                <p id="doctor-feedback" class="feedback"></p>
+            </form>
+        </section>
+    </body>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="script.js"></script>
+</body>
+</html>
