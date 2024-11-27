@@ -1,11 +1,17 @@
 /* Quienes Somos Page Styles */
 #quienes {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
     padding: 20px;
-    background-color: var(--background-color);
     color: var(--text-color);
+    position:relative;
+    width:100%;
 }
 
 #quienes p {
+    display:flex;
+    flex-direction:column;
     margin-bottom: 20px;
     font-size: 1.2em;
 }

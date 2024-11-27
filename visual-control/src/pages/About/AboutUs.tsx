@@ -4,6 +4,17 @@ import "./AboutUs.css"
 const AboutUs = () => {
     return(
         <section id="quienes">
+            <h2>Nuestra Misión</h2>
+            <p>Con VisualControl, no solo damos un paso hacia la tecnología del futuro, sino que la hacemos parte de tu vida diaria. ¡El control nunca había sido tan sencillo y natural!</p>
+        </section>
+    );
+
+};
+
+export default AboutUs;
+
+/*
+        <section id="quienes">
             <h1>¿Quiénes Somos?</h1>
             <p>En VisualControl, nos apasiona innovar y brindar soluciones tecnológicas que transformen la manera en que interactuamos con nuestro entorno. Nuestro objetivo es poner el control de tu hogar al alcance de tu visión, integrando tecnología de punta con un enfoque práctico y accesible.</p>
             
@@ -21,8 +32,4 @@ const AboutUs = () => {
             
             <p>Con VisualControl, no solo damos un paso hacia la tecnología del futuro, sino que la hacemos parte de tu vida diaria. ¡El control nunca había sido tan sencillo y natural!</p>
         </section>
-    );
-
-};
-
-export default AboutUs;
+*/

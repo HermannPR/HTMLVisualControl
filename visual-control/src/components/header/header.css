@@ -8,13 +8,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, var(--background-color), var(--color6));
     padding: 10px 20px;
-    border: 3px solid; /* Add a full outer border */
-    border-image: linear-gradient(to right, var(--color1), var(--color6)) 0;
     opacity: 0.9;
-    border-radius: 5vw 0 0 5vw; /* Rounded corners only on the left side */
-    box-shadow: 0 8px 8px var(--color6);
     overflow: hidden; /* Ensure the border-radius is applied to the border image */
     height: 80px; /* Set a fixed height for the header */
 }
@@ -26,9 +21,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.737); /* White overlay with 50% opacity */
     z-index: -1; /* Ensure the overlay stays behind the header content */
-    border-radius: 5vw 0 0 5vw; /* Rounded corners only on the left side */
 }
 
 /* Logo */
@@ -50,8 +43,8 @@ header::before {
     font-size: 3em;
     background: linear-gradient(to right, var(--color1), var(--color6));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 4px var(--title-shadow);
+    color:rgb(234, 210, 182);
     transition: background 2s linear;
 }
 
@@ -68,13 +61,11 @@ header::before {
 }
 
 .button {
-    background-color: linear-gradient(to right, var(--background-color), var(--color6));
-    color: black;
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    box-shadow: 0 4px 2px var(--color1);
 }
 
 .button.secondary {
@@ -84,7 +75,6 @@ header::before {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    box-shadow: 0 4px 2px var(--color1);
 }
 
 .button.highlight {
@@ -92,9 +82,7 @@ header::before {
     color: var(--text-color);
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
     transition: background-color 0.3s;
-    box-shadow: 0 4px 2px var(--color1);
 }
 
 .button:hover {

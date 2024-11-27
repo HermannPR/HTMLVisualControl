@@ -13,6 +13,7 @@ function App() {
   return (
     <Router>
       <Header/>
+      <div style= {{height: "90px"}} className= "section"/>
       <AboutUs/>
       <Footer/>
     </Router>

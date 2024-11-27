@@ -17,12 +17,15 @@
     --card-gradient: linear-gradient(0, var(--background-color) 0%, var(--surface-color) 50%, var(--background-color) 100%);
 
     /* Colors for Transition */
-    --color1: #1500ff;
+    --color1: #c9c2b5;
     --color2: #0011ff;
     --color3: #0062ff;
     --color4: #0080ff;
     --color5: #008cff;
-    --color6: #001eff;
+    --color6: #f2dcbd;
+    background-color:black;
+    /* Fonts */
+    --font-sans: 'Poppins', 'Roboto', sans-serif;
 }
 
 @font-face {
@@ -39,7 +42,6 @@ body {
     padding: 0;
     color: var(--text-color);
     scroll-behavior: smooth;
-    background-color: var(--background-color);
 }
 
 title {
