@@ -16,7 +16,7 @@
         <section id="registrar-doctor">
             <h2>Registrar Doctor</h2>
             <p>Aquí puedes registrar un nuevo doctor.</p>
-            <form id="doctor-form" class="horizontal-form">
+            <form id="doctor-form" class="horizontal-form" method="POST" action="registroDoctor.php">
                 <div class="form-group">
                     <label for="doctor-nombre">Nombre:</label>
                     <input type="text" id="doctor-nombre" name="nombre" required>
@@ -26,8 +26,16 @@
                     <input type="text" id="doctor-apellido" name="apellido" required>
                 </div>
                 <div class="form-group">
-                    <label for="doctor-pid">pID:</label>
-                    <input type="number" id="doctor-pid" name="pid" required>
+                    <label for="paciente-usuario">Username:</label>
+                    <input type="text" id="paciente-usuario" name="usernamed" required>
+                </div>
+                <div class="form-group">
+                    <label for="paciente-password">Contraseña</label>
+                    <input type="password" id="paciente-password" name="passwordd" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor-pid">pID a tratar:</label>
+                    <input type="number" id="doctor-pid" name="pid">
                 </div>
                 <div class="button-container">
                     <button type="submit" class="button large">Enviar</button>

@@ -1,53 +1,37 @@
 /* Login Page Styles */
 #login {
-    padding: 12vh;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 15vh;
-    max-width: 40vh;
-    margin-left: auto;
-    margin-right: auto;
-  
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
 }
 
-#login h2 {
+.form-container {
+    background-color: var(--surface-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
     margin-bottom: 20px;
     text-align: center;
 }
 
-#login p {
-    font-size: 1.2em;
-    text-align: center;
-}
-
-form.horizontal-form {
+.form-container form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+    gap: 10px;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 100%;
-}
-
-input[type="text"], input[type="password"] {
+.form-container input {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
-    width: 100%;
 }
 
-button[type="submit"] {
+.form-container button {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -55,17 +39,8 @@ button[type="submit"] {
     color: var(--text-color);
     cursor: pointer;
     transition: background-color 0.3s;
-    width: 100%;
-    max-width: 200px;
 }
 
-button[type="submit"]:hover {
+.form-container button:hover {
     background-color: var(--secondary-color);
-}
-
-.feedback {
-    margin-top: 10px;
-    font-size: 1em;
-    color: green;
-    text-align: center;
 }
